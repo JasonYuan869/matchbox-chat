@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/web",
+    "packages/lib",
+    "signalling-server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w packages/lib\" \"npm run dev -w packages/web\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
